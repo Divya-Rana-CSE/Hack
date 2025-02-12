@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teen Guidance Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="fade-in">Discover Your True Potential</h1>
+                <p class="fade-in">Your personal growth journey starts here. Understand your MBTI personality, set goals, and get AI-powered guidance tailored just for you.</p>
+                <button class="cta-button fade-in" onclick="scrollToWaitlist()">Join the Waitlist</button>
+            </div>
+        </section>
+
+        <!-- MBTI Preview Section -->
+        <section class="mbti-preview">
+            <div class="container">
+                <h2>Discover Your MBTI Type</h2>
+                <p>Take our comprehensive MBTI assessment to understand your personality type and receive personalized guidance for your growth journey.</p>
+                <div class="mbti-grid">
+                    <div class="mbti-card">
+                        <h3>INTJ</h3>
+                        <p>Architect</p>
+                    </div>
+                    <div class="mbti-card">
+                        <h3>ENFP</h3>
+                        <p>Champion</p>
+                    </div>
+                    <div class="mbti-card">
+                        <h3>ISFJ</h3>
+                        <p>Defender</p>
+                    </div>
+                    <div class="mbti-card">
+                        <h3>ENTP</h3>
+                        <p>Debater</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2>Coming Soon Features</h2>
+                <p>Everything you need for personal growth in one place</p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon">🤖</div>
+                        <h3>AI Guidance</h3>
+                        <p>Get personalized advice and insights from our AI mentor</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">📅</div>
+                        <h3>Goal Tracking</h3>
+                        <p>Set and track your personal development goals</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">📚</div>
+                        <h3>Curated Content</h3>
+                        <p>Access articles and resources tailored to your MBTI type</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🎯</div>
+                        <h3>Progress Analytics</h3>
+                        <p>Visualize your growth journey with detailed analytics</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Waitlist Form Section -->
+        <section id="waitlist" class="waitlist">
+            <div class="container">
+                <div class="waitlist-card">
+                    <h2>Join the Waitlist</h2>
+                    <p>Be the first to know when we launch</p>
+                    <form id="waitlistForm" onsubmit="handleWaitlistSubmit(event)">
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit" class="submit-button">Join Waitlist</button>
+                    </form>
+                    <div id="successMessage" class="success-message hidden">
+                        Thanks for joining! We'll be in touch soon.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
